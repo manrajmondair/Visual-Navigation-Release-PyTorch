@@ -27,7 +27,7 @@ conda env create -f environment.yml
 conda activate venv-mpc
 ```
  
-#### Install PyTorch (v 1.10.1)
+#### Install PyTorch (v 1.12.0)
 For an ubuntu machine with GPU support run the following:
 ```
 pip install torch torchvision torchaudio
