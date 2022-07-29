@@ -1,6 +1,4 @@
-# Visual-Navigation-Release-PyTorch
-Combining Optimal-Control and Learning for Visual Navigation in Novel Environments using PyTorch
-Learning-Based Waypoint Navigation with PyTorch
+#Learning-Based Waypoint Navigation with PyTorch
 ==========
 Welcome to LB-WayPtNav (Learning-Based Waypoint Navigation), a codebase for simulation of robot navigational scenarios in indoor-office environments! We are a team of researchers from UC Berkeley, UIUC, and Buchanan High School.
  
