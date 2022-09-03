@@ -22,10 +22,10 @@ def create_params():
                                  num_neurons_per_layer=128,
                                  
                                  # Activation function for the hidden layer
-                                 hidden_layer_activation_func=torch.keras.activations.relu,
+                                 hidden_layer_activation_func=torch.nn.ReLU,
                                  
                                  # Activation function for the output layer
-                                 output_layer_activation_func=torch.keras.activations.linear,
+                                 output_layer_activation_func=torch.nn.Linear,
                                  
                                  # Whether to use dropout in the fully connected layers
                                  use_dropout=True,
@@ -71,7 +71,7 @@ def create_params():
                         batch_size=10000,
                         
                         # The training optimizer
-                        optimizer=torch.train.AdamOptimizer,
+                        optimizer=torch.optim.Adam,
         
                         # Learning rate
                         lr=1e-2,

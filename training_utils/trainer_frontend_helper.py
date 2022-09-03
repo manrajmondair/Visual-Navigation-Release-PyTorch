@@ -5,6 +5,12 @@ import os
 import importlib
 import datetime
 import logging
+import sys
+
+from os.path import dirname, abspath
+d = dirname(dirname(abspath(__file__)))
+
+sys.path.append(d)
 
 from data_sources.data_source import DataSource
 from training_utils.trainer_helper import TrainerHelper
@@ -21,7 +27,7 @@ class TrainerFrontendHelper(object):
     
     """
     def run(self):
-        torch.enable_eager_execution(**utils.torch_session_config())
+        torch(**utils.torch_session_config())
         self.setup_parser()
     
     def setup_parser(self):

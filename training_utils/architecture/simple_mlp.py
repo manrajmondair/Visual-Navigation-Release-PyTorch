@@ -1,6 +1,6 @@
 import torch
 
-layers = torch.keras.layers
+layers = torch.nn
 
 
 def simple_mlp(num_inputs, num_outputs, params, dtype=torch.float32):

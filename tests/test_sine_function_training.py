@@ -2,6 +2,12 @@ import numpy as np
 import os, shutil
 import tempfile
 import torch
+import sys
+
+from os.path import dirname, abspath
+d = dirname(dirname(abspath(__file__)))
+
+sys.path.append(d)
 
 from params.sine_params import create_params
 from executables.sine_function_trainer import SineFunctionTrainer
@@ -10,7 +16,7 @@ from executables.sine_function_trainer import SineFunctionTrainer
 def test_sine_function_training():
     # Set random seeds
     np.random.seed(seed=1)
-    torch.set_random_seed(seed=1)
+    torch.random.manual_seed(seed=1)
     
     # Create a temporary directory
     dirpath = tempfile.mkdtemp()
